@@ -1,0 +1,53 @@
+.header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 0px;
+}
+
+.header h3 {
+  color: #fff;
+}
+
+.content {
+  background-image: url("../assets/glassesImage/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+
+.img-left {
+  position: relative;
+}
+.img-left img {
+  width: 60%;
+}
+
+.img-right img {
+  width: 60%;
+}
+
+.img-item img:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.img-item img {
+  width: 15%;
+  margin: 0px 10px;
+}
+
+.img-change {
+  position: absolute;
+  top: 115px;
+  left: 230px;
+}
+
+.img-change img {
+  width: 200px;
+  opacity: 0.5;
+}
+
+.img-item {
+  background-color: #fff;
+  margin-top: 50px;
+}
