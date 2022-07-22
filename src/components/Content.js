@@ -21,50 +21,82 @@ import Model from "../assets/glassesImage/model.jpg";
 import "./Content.css";
 
 export class Content extends Component {
-  state = { ImgChange: v1 };
+  state = {
+    ImgChange: v1,
+    nameChange: "GUCCI G8850U",
+    descChange:
+      "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
+  };
   changeG1 = () => {
     this.setState({
       ImgChange: v1,
+      nameChange: "GUCCI G8850U",
+      descChange:
+        "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
     });
   };
   changeG2 = () => {
     this.setState({
       ImgChange: v2,
+      nameChange: "GUCCI G8759H",
+      descChange:
+        "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
     });
   };
   changeG3 = () => {
     this.setState({
       ImgChange: v3,
+      nameChange: "DIOR D6700HQ",
+      descChange:
+        "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
     });
   };
   changeG4 = () => {
     this.setState({
       ImgChange: v4,
+      nameChange: "DIOR D6005U",
+      descChange:
+        "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
     });
   };
   changeG5 = () => {
     this.setState({
       ImgChange: v5,
+      nameChange: "PRADA P8750",
+      descChange:
+        "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
     });
   };
   changeG6 = () => {
     this.setState({
       ImgChange: v6,
+      nameChange: "PRADA P9700",
+      descChange:
+        "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
     });
   };
   changeG7 = () => {
     this.setState({
       ImgChange: v7,
+      nameChange: "FENDI F8750",
+      descChange:
+        "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
     });
   };
   changeG8 = () => {
     this.setState({
       ImgChange: v8,
+      nameChange: "FENDI F8500",
+      descChange:
+        "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
     });
   };
   changeG9 = () => {
     this.setState({
       ImgChange: v9,
+      nameChange: "FENDI F4300",
+      descChange:
+        "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
     });
   };
   render() {
@@ -75,14 +107,18 @@ export class Content extends Component {
         </header>
         <div className="content">
           <div className="container">
-            <div className="row">
-              <div className="img-left col-6">
+            <div className="row" style={{ justifyContent: "space-around" }}>
+              <div className="img-left col-3">
                 <img src={Model} />
                 <div className="img-change">
                   <img src={this.state.ImgChange} />
                 </div>
+                <div className="content-change">
+                  <h3>{this.state.nameChange}</h3>
+                  <p>{this.state.descChange}</p>
+                </div>
               </div>
-              <div className="img-right col-6">
+              <div className="img-right col-3">
                 <img src={Model} />
               </div>
               <div className="img-item">

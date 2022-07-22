@@ -1,5 +1,5 @@
 .header {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   padding: 20px 0px;
 }
 
@@ -17,13 +17,18 @@
 
 .img-left {
   position: relative;
+  padding: 0%;
 }
 .img-left img {
-  width: 60%;
+  width: 100%;
+}
+
+.img-right {
+  padding: 0%;
 }
 
 .img-right img {
-  width: 60%;
+  width: 100%;
 }
 
 .img-item img:hover {
@@ -38,16 +43,36 @@
 
 .img-change {
   position: absolute;
-  top: 115px;
-  left: 230px;
+  top: 105px;
+  left: 82px;
 }
 
 .img-change img {
-  width: 200px;
+  width: 165px;
   opacity: 0.5;
 }
 
 .img-item {
   background-color: #fff;
   margin-top: 50px;
+}
+
+.content-change {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 0, 0.6);
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.content-change h3 {
+  text-align: left;
+  font-weight: 700;
+}
+
+.content-change p {
+  text-align: left;
+  font-size: 16px;
 }

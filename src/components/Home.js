@@ -5,7 +5,7 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        <Content />
+        <Content glasses={this.glasses} />
       </div>
     );
   }
